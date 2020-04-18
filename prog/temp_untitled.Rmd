@@ -1,0 +1,110 @@
+---
+title: "Untitled"
+author: "Yazhen WU"
+date: "2020年3月12日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+
+# 三、热门期刊分析
+
+## 总发文量和总被引量均排名前列的dTOP期刊
+
+```{r Journal_function,warning=FALSE,message=FALSE,echo=True,eval=TRUE}
+# Define function: Journal_Count
+Journal_Count <- function(sYear=2009,tYear=2019){
+  liter.year <- filter(literatures, literatures$PY %in% sYear:tYear)
+
+  liter.year$SO <- toupper(as.character(liter.year$SO))
+  ViewSO <- group_by(liter.year, SO) %>% summarise(count=n(),TC=sum(TC, na.rm = T))
+  ViewSO$rankCount <- length(ViewSO$count)-rank(ViewSO$count,ties.method ="max")+1
+  ViewSO$rankTC <- length(ViewSO$TC)-rank(ViewSO$TC,ties.method ="max")+1
+  return(ViewSO)
+  
+  # Journal.year <- toupper(as.character(liter.year$SO))
+  # count.Journal.year <- sort(table(Journal.year), decreasing=T)
+  # df.Journal.year<- data.frame(count.Journal.year, row.names =NULL)
+  # names(df.Journal.year) <- c("Journal", "Frequency")
+  # 
+  # First15.Journal.year <- df.Journal.year[1:15,]
+  # First15.Journal.year$Journal <- toupper(as.character(First15.Journal.year$Journal))
+  # return(First15.Journal.year)
+}
+
+# Create Data-View Table of Journal_AllYear
+  Journal_AllYears_View <- Journal_Count(as.numeric(startYear),as.numeric(targetYear))
+  Journal_AllYears_View$AveCite <- Journal_AllYears_View$TC / Journal_AllYears_View$count
+  # names(Journal_AllYears_View) <- c(paste(sYear,"-",tYear,sep=''), "Count","TC","rankCount","rankTC")
+    names(Journal_AllYears_View) <- c("Journal_Name","Total_Articles","Total_Citations","rankArticles","rankCitations","Average_Citation")
+  
+# Define function Article_Keyword_AllYears: For analyzing keywords in all years
+dTOP_Journal_AllYears <- function(sYear=2009,tYear=2019,writeCSV=TRUE){
+  Journal_AllYears <- Journal_Count(as.numeric(sYear),as.numeric(tYear))
+  Journal_AllYears$AveCite <- Journal_AllYears$TC / Journal_AllYears$count
+      
+  dtry=10
+  repeat{
+  Journal_Extracted <- Journal_AllYears[Journal_AllYears$rankCount<=dtry & Journal_AllYears$rankTC<=dtry,]
+  Number_Extracted <- length(Journal_Extracted$SO)
+  if(Number_Extracted>=10){break}else{dtry <- dtry+1}
+  }
+  
+  # Journal_Extracted$AveCite <- Journal_Extracted$TC / Journal_Extracted$count
+  names(Journal_Extracted) <- c("Journal_Name","Total_Articles","Total_Citations","rankArticles","rankCitations","Average_Citation")
+  
+  # Write CSV
+  if (writeCSV==TRUE){
+      write.csv(Journal_Extracted,
+                paste(DataPath,"/result/dTOP_Journal_",sYear,"_",tYear,".csv",sep=''))
+  }
+  # Create Rmarkdown Table
+  table_Journal_All_output <- knitr::kable(Journal_Extracted)
+  table_Journal_All_output
+  dT_Jn_All <- max(max(Journal_Extracted$rankArticles),max(Journal_Extracted$rankCitations))
+  return(dT_Jn_All)
+}
+```
+
+- 在所有年份中，总发文量和总被引数均排名最前列的10个期刊为：
+
+```{r Journal_dTop_All,warning=FALSE,message=FALSE,echo=True,eval=TRUE}
+# Now Analyze top journals in all years:
+dTOP_Journal_AllYears(startYear,targetYear)
+dT_Jn_All <- dTOP_Journal_AllYears(startYear,targetYear)
+print(paste("其中，dTOP数值为", dT_Jn_All,sep=""))
+```
+
+
+
+```{r load_JCF}
+JCRIF <- read.csv(paste(Bibliopath,"/Data/Ancillary/JCR_IF_2018.csv",sep=''), header = TRUE, sep = ",")
+names(JCRIF) <- c("Rank","Journal","TC","IF","EFScore")
+JCRIF$Journal <- toupper(as.character(JCRIF$Journal))
+```
