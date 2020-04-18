@@ -1,0 +1,374 @@
+
+<<results="hide",echo=FALSE>>=
+	figpathTopTakCN <- paste(RFileLocation, 'figure/rept/final/', sep="");
+@
+
+\section{Global Health研究}	
+
+%======================================Session1=========================================
+\subsection{ \textcolor{owngrey}简单回顾}
+
+\begin{frame}{1.Health研究总体思路}
+\begin{itemize}
+\item 气候变化或空气污染减缓的协同效益
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.87\textwidth}{\Sexpr{figpathTopTakCN}Climate_and_air.png}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.87\textwidth}{\Sexpr{figpathTopTakCN}Cobenefit_flow.png}
+\small 气候减缓协同效益研究框架
+\end{itemize}
+\end{frame}
+
+\begin{frame}{2.Health研究技术路线图}
+\begin{columns}
+\begin{column}{0.55\textwidth}
+\begin{enumerate}
+\item IMED|HEL模型体系
+	\begin{itemize}
+	\item 健康影响评估模块
+	\item 经济损失评估模块
+	\end{itemize}
+\item HEL模型与其他模型的链接
+	\begin{itemize}
+	\item 起点和终点：经济模型(CGE)
+	\item 桥梁：空气质量模型(GEOS-Chem,WRF-Chem...)
+	\end{itemize}
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.77\textwidth}{\Sexpr{figpathTopTakCN}IMED_HEL.png}\\
+\small Health研究技术路线
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{3.Global Health研究历史进程} 
+\begin{itemize}
+\item 2018/10 AIMWS：直接分析老师提供的空气质量和健康影响结果
+\item 2019/5 NCL地图可视化；人口数据
+\item 2019/6 整理Grid health代码，调整数据结构
+\item 2019/7 把Grid health放进IMED|HEL中，并改回经典模式
+\item 2019/8 NCL代码修改；将O3分析模块用于实际计算任务
+\item 2019/9 数据输入输出、数据结构的调整
+\end{itemize}
+\end{frame}
+
+
+%======================================Session2=========================================
+
+\subsection{\textcolor{owngrey}最新进展}
+\begin{frame}{数据结构调整}
+\begin{enumerate}
+\item Grid health版数据结构
+	\begin{itemize}
+	\item DatainputHEL: 调用社会经济数据，根据年份需求进行临时插值，并输出成Socioeconomy subtask.gdx
+	\item DatainputHEL: 加载各年浓度数据，整合成一个变量(Conc Data)，并用人口数据和格点数据求地理平均、人口加权平均，输出成Conc and Pop.gdx
+	\item imedHEL: 计算格点版健康影响和经济损失（用上述社会经济和浓度数据），输出成Health grid task.gdx
+	\item imedHEL: 计算区域版健康影响和经济损失（用格点结果和区域的社会经济数据），输出成Health reg task.gdx
+	\end{itemize}
+\item 现在的数据库和调用方式
+	\begin{itemize}
+	\item PreProcess: 首先处理得到详细的经济人口数据备用 
+	\item DatainputHEL: 一次性加载和调用，人口、经济、浓度结果均输出至InputHEL helt task.gdx
+	\item imedHEL: 同时计算格点版和区域版的影响和损失，输出至Health grid task.gdx和Health reg task.gdx
+	\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{数据结构调整}
+\begin{itemize}
+\item IMED|HEL模型结构梳理
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.77\textwidth}{\Sexpr{figpathTopTakCN}IMED_HEL.jpg}\\
+\end{itemize}
+\end{frame}
+
+\begin{frame}{SSP人口经济数据库构建}
+\begin{enumerate}
+\item 人口数据
+	\begin{itemize}
+	\item 来源：NASA SEDAC数据库（历史数据：GPW4，未来数据：SSP Data)
+	\item 年份：2000-2100年（历史数据：2000、2005、2010、2015、2020，未来数据：2010，2020，...，2100)
+	\item 处理过程：
+		\begin{itemize}
+		\item 下载NC版本数据文件,用NetCDF命令行功能提取数据字段
+		\item 用NCL整理成三列规整的TXT
+		\item R语言前处理（经纬度、缺失值）
+		\item GAMS调用regrid mapping，对未来年份数据(0.125度分辨率)进行格点加总；与历史数据合并
+		\item 用GAMS进行插值：格点人口插值得到20X5年的结果，区域总人口进行逐年线性插值。
+		\end{itemize}
+	\end{itemize}
+\item 经济数据
+	\begin{itemize}
+	\item 来源：NIES数据库；姜彤老师提供的数据
+	\item 年份：2000-2100年，每隔十年
+	\item 处理过程：对NIES数据，直接对照ISO映射得到区域的数据（不完整）；对姜彤老师的数据，同样进行格点贾总和插值。
+	\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{SSP人口经济数据库构建}
+\begin{itemize}
+\item 整合处理后的经济人口数据库
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.77\textwidth}{\Sexpr{figpathTopTakCN}SocioEcon_Data.png}\\
+\end{itemize}
+\end{frame}
+
+
+%======================================Session3=========================================
+\subsection*{\textcolor{owngrey}其他相关工作}
+
+\begin{frame}{地理信息数据分析}
+\textbf{1. 再次尝试用R和NCL画分区地图}
+\begin{itemize}
+\item 可以用R或NCL绘制分行政区地图
+\vskip3pt  
+	\includegraphics[height=0.6cm]{\Sexpr{figpathTopTakCN}R_USmap.jpeg} \hskip3pt \includegraphics[height=0.6cm]{\Sexpr{RDataPathMIN}figure/final/R_CNmap.jpg} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{地理信息数据分析}
+\textbf{2.格点数据分析}
+\begin{itemize}
+\item 格点-国家的Mapping有了新数据
+	\begin{itemize}
+	\item NASA Identifier
+	\end{itemize}
+\item 格点-省份的Mapping还没有找到
+	\begin{itemize}
+	\item ArcGIS可以实现（张达老师也说），但我们还没有经验
+	\item 学GIS的室友说理论上很容易实现但她也不知道应该怎么做
+	\item 曾经发邮件询问朱老师组薛涛师兄，但是……原来邮件没有发出去
+	\vskip1ex  \centering  \includegraphicsmaybe{width=0.8\textwidth}{\Sexpr{figpathTopTakFinal}email_back.png} 
+	\end{itemize}
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+\begin{frame}{资料和数据库整理}
+\begin{itemize}
+\item \textcolor{OwlBlue}{Week in Review}的尝试——Judith Curry's Work  
+	\begin{itemize}
+	\item Link:https://judithcurry.com/
+	\end{itemize}
+\end{itemize}
+\begin{columns}
+\begin{column}{0.62\textwidth}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.8\textwidth}{\Sexpr{figpathTopTakCN}WeekReview_Judy.png}\\
+\small Climate Etc.
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.9\textwidth}{\Sexpr{figpathTopTakCN}WeekReview_Judy_Comment.png}\\
+\small Comments and Replies
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{资料和数据库整理}
+\begin{itemize}
+\item 个人（小组）版 Week in Review
+	\begin{itemize}
+	\item 坚果云：\LEEEP_Share\doc\memo\Week_in_Review(欢迎随时补充).docx
+	\end{itemize}
+\end{itemize}
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.77\textwidth}{\Sexpr{figpathTopTakCN}WeekReview_Data.png}\\
+\small 数据清单
+\end{column}
+
+\begin{column}{0.75\textwidth}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.77\textwidth}{\Sexpr{figpathTopTakCN}WeekReview_1.png}\\
+\small 例：综合类数据
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{资料和数据库整理}
+\begin{itemize}
+\item 个人（小组）版 Week in Review
+	\begin{itemize}
+	\item 每周探索发现
+	\end{itemize}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.6\textwidth}{\Sexpr{figpathTopTakCN}WeekReview_Content.png}\\
+\end{itemize}
+\end{frame}
+
+%======================================Session3=========================================
+\subsection{\textcolor{owngrey}下一步目标}
+\begin{frame}{工作1：完成输入输出和数据结构调整}
+\begin{itemize}
+\item 进一步思考并完善模型框架图，使其与整个模型结构更加匹配
+\item 整理和备份冗余文件
+\item 改进数据输出方式和结构
+\end{frame}
+
+\begin{frame}{工作2：完善数据库和Mapping}
+\begin{enumerate}
+\item 数据处理
+	\begin{itemize}
+	\item 检查现有数据的处理和运用是否正确
+	\item 整理汉唐找的WHO与GBD健康数据
+	\end{itemize}
+\item Mapping
+	\begin{itemize}
+	\item 制作全球r194国家与格点经纬度dmapping
+	\item 继续灵活处理，包括对照WHO mapping，以及做进一步的国家、区域、部门划分
+	\end{itemize}
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}{工作3：改进RR计算与不确定性分析同时推进}
+\begin{enumerate}
+\item 以1000组IER参数值的Table为起点，尝试搭建不确定性框架
+\end{frame}
+
+
+%======================================Session4=========================================
+\subsection{\textcolor{owngrey}更下一阶段的目标}
+\begin{frame}{IMED|HEL模型体系的下一步扩展}
+\begin{enumerate}
+\item 在DataMine中直接分析原始结果
+\item 重新与MakeFigure.r连接，自动可视化
+\item 统一grid和region模式，不再保留两个分支
+\item 改进RR计算与不确定性分析同时推进
+\end{enumerate}
+\end{frame}
+
+
+%======================================Session5=========================================
+\subsection{\textcolor{owngrey}长期探索方向}
+%---------------------------------------Slide 1------------------------------------------
+\begin{frame}{探索方向1：Brace Cobenefits}
+\textbf{1. BRACE}
+\begin{itemize}
+	\item \textcolor{OwlBlue}{What is \textbf{BRACE}?}
+	\begin{itemize}
+	\item Benefits of Reduced Anthropogenic Climate changE
+	\item BRACE is a project to figure out the various benefits from mitigated climate change. In a special issue of Climatic Change, which is edited by Brian O'Neill and Andrew Gettelman, the results of the project have been published.
+	\end{itemize}
+\end{itemize}
+
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.87\textwidth}{\Sexpr{figpathTopTakCN}Special_Issue.png}  \\ 
+\small Fig. Special Issue in \emph{Climate Change}	
+
+\end{frame}
+%----------------------------------------------------------------------------------------
+%---------------------------------------Slide 2------------------------------------------
+\begin{frame}{探索方向1：Brace Cobenefits}
+\textbf{1. BRACE}
+\begin{itemize}
+\item \textcolor{OwlBlue}{What are mainly discussed in \textbf{BRACE?}}
+	\begin{itemize}
+	\item Benefits analyzed by Physical Modeling
+		\begin{itemize}
+		\item Differences in temperature extremes
+		\item heat waves
+		\item Precipitation extremes
+		\item tropical cyclones
+		\item Impacts of mixed aerosol and greenhouse gas forcing on extremes
+		\end{itemize}
+	\item Benefits analyzed by Modeling managed systems
+		\begin{itemize}
+		\item Exposure to rural/urban heatwaves
+		\item Heat-related mortality risk
+		\item Exposure to primary mosquito that transmits viruses
+		\item Crop yields and economic consequences 
+		\item Damage from future tropical cyclone
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+%---------------------------------------Slide 3------------------------------------------
+\begin{frame}{探索方向1：Brace Cobenefits}
+\textbf{2. Cobenefits}
+\begin{itemize}
+\item \textcolor{OwlBlue}{What are the "Cobenefits" in the context of climate change?}
+	\begin{itemize}
+	\item While climate change triggers great threats on different aspects of human systems,the policy and actions combating climate change may also trigger significant synergies.
+	\end{itemize}
+\item Importance of "cobenefits"
+	\begin{itemize}
+	More ambitious mitigation policies and actions will be rolled out to realize climate targets, if \textcolor{OwlRed}{the degree to which initiatives reducing GHG emission can contribute to human health and economy} is uncovered.
+	\end{itemize}
+\end{itemize}
+	
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.7\textwidth}{\Sexpr{figpathTopTakCN}Cobenefit_Type.jpg}  \\ 
+\Small Fig. Categories of Climate Mitigation Co-benefits \footnote{\textcolor{OwlCyan}{Mayrhofer, J.P. and J. Gupta} (2016). "The science and politics of co-benefits in climate policy." \textcolor{OwlBlue}{Environmental Science and Policy}  57: 22-30(\href{https://www.sciencedirect.com/science/article/pii/S1462901115301064}{\textbf{\textcolor{OwlBlue}{Mayrhofer& Gupta, 2016}}})}
+
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+%---------------------------------------Slide 3------------------------------------------
+\begin{frame}{探索方向2：健康影响的区域异质性}
+\begin{itemize}
+\item \textcolor{OwlBlue}{为什么中东和非洲地区在减缓情景下可能不仅没有得到协同效益，空气污染还更严重了？}
+\end{itemize}
+	
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.7\textwidth}{\Sexpr{figpathTopTakCN}Different.png}  \\ 
+\Small Fig. Net Benefits from 2-degree mitigation pathway in different regions
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+%---------------------------------------Slide 4------------------------------------------
+\begin{frame}{探索方向3:不确定性分析}
+\begin{itemize}
+\item \textcolor{OwlBlue}{考虑各种不确定性来源}
+	\begin{itemize}
+	\item 社会经济：未来人口数量、人口年龄结构、健康水平(疾病的自然死亡率)
+	\item 浓度：空气质量模拟结果的不确定性(与卫星retrieve值对照)
+	\item 健康影响ER Function参数：对数线性/IER/其他？具体参数导致的不同？
+	\item 货币化评估参数：基准VSL的选取；地区经济发展水平的不同；两种VSL计算方法的差异
+	\end{itemize}
+\item \textcolor{OwlBlue}{扩展HEL模型的不确定性模块}
+	\begin{itemize}
+	\item 修改时要考虑整个模型体系的通用性
+	\item 如果可行，未来与其他模型相结合
+\end{itemize}
+
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+%======================================Session3=========================================
+\subsection{\textcolor{owngrey}个人近况}
+\begin{frame}{近期情况}
+\begin{itemize}
+\item \textcolor{OwlBlue}{小组事务}
+	\begin{itemize}
+	\item ChinaIPCC第二章修改、PPT制作和旁听会议
+	\item 服务器管理组内说明
+	\item 更新小组文章数据库
+	\end{itemize}
+\item \textcolor{OwlBlue}{学习生活}
+	\begin{itemize}
+	\item 课程：17学分，张弛有度
+	\item 生活：早睡早起，研(bo)究(shi)生作息
+	\item 锻炼：和晓瑞去(了一次)健身房
+	\item 本周最开心：姜老师的鼓励
+	\end{itemize}
+\vskip1ex  \centering  \includegraphicsmaybe{width=0.5\textwidth}{\Sexpr{figpathTopTakCN}grateful.png}  \\ 
+\end{itemize}
+
+\end{frame}
+
+
+
+%---------------------------------------------------------------------------------------%
+%                                                                                       %
+%	                                  Q & A                                             %
+%                                                                                       %
+%---------------------------------------------------------------------------------------%
+<<results="hide",echo=FALSE>>=
+contact   <- ifelse(user %in% c("Dai", "DAI", "dai"), "Dai", "Xie")
+Person    <- ifelse(user %in% c("user","Yazhen"), "Yazhen","Unknown_user")
+childfile <- paste(DataMinePath, '/subprog/subslid/QA', Person, '_', language, '.Rnw', sep='')
+if (!file.exists(childfile)) {make_logfile(childfile) ; childfile <- NULL} ; 
+@
+<<results="hide",echo=FALSE, child=childfile>>=
+@
+
+<<results="hide",echo=FALSE>>=
+knit_exit()
+@
