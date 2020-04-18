@@ -1,0 +1,670 @@
+---
+title: "30-article-econmic"
+author: "Yazhen WU"
+date: "2019年10月20日"
+output: html_document
+---
+
+
+# THE PROBLEM OF THE COMMONS: STILL UNSETTLED AFTER 100 YEARS  
+
+Robert N. Stavins*  
+
+  
+
+As the first decade of the twenty-first century comes to a close, the problem of the commons is more central to economics and more important to our lives than a century ago when Katharine Coman led off the first issue of the American Economic Review with her examination of “Some Unsettled Problems of Irrigation” (1911). Since that time, 100 years of remarkable economic progress have accompanied 100 years of increasingly challenging problems.  
+
+  
+
+As the U.S. and other economies have grown, the carrying-capacity of the planet — in regard to both natural resources and environmental quality — has become a greater concern. This is particularly true for common-property and open-access resources. While small communities frequently provide modes of oversight and methods for policing their citizens (Elinor Ostrom 2010), as the scale of society has grown, commons problems have spread across communities and even across nations.1 In some of these cases, no over-arching authority can offer complete control, rendering commons problems more severe. Although the type of water allocation problems of concern to Coman (1911) have frequently been addressed by common-property regimes of collective management (Ostrom 1990), less easily governed problems of open-access are associated with growing concerns about air and water quality, hazardous waste, species extinction, maintenance of stratospheric ozone, and — most recently — the stability of the global climate in the face of the steady accumulation of greenhouse gases.  
+
+  
+
+This article reflects on some important, unsettled problems of the commons. It identifies both the contributions made by economic analysis and the challenges facing public policy. Section I begins with natural resources, highlighting the difference between most nonrenewable natural resources, pure private goods which are both excludable and rival in consumption, and renewable  
+
+  
+
+ 
+natural resources, many of which are non-excludable (Table 1). Some of these are rival in consumption but characterized by open-access. An example is the degradation of ocean fisheries. An economic perspective on these resources helps identify the problems they present for management, and provides guidance for sensible solutions.  
+
+  
+
+Section II turns to a major set of commons problems which were not addressed until the last three decades of the twentieth century — environmental quality. Although frequently characterized as textbook examples of externalities, these problems can also be viewed as a particular category of commons problems: pure public goods, which are both non-excludable and non-rival in consumption (Table 1). A key contribution of economics has been the development of market-based approaches to environmental protection, including emission taxes and tradable rights. These have potential to address the ultimate commons problem of the twenty-first century, global climate change. Section III concludes.  
+
+  
+
+Several themes emerge. First, economic theory — by focusing on market failures linked with incomplete systems of property rights — has made major contributions to our understanding of commons problems and the development of prudent public policies. Second, as our understanding of the commons has become more complex, the design of economic policy instruments has become more sophisticated, enabling policy makers to address problems that are characterized by uncertainty, spatial and temporal heterogeneity, and long duration. Third, government policies which have not accounted for economic responses have been excessively costly, often ineffective, and sometimes counter-productive. Fourth, commons problems have not diminished. While some have been addressed successfully, others have emerged that are more important and more difficult. Fifth, environmental economics is well positioned to offer better understanding and better policies to address these ongoing challenges.  
+
+  
+
+## I.	The Problem of the Commons and the Economics of Natural Resources  
+
+II.	
+  
+
+Despite their finite supply in the earth’s crust (and despite decades of doomsday predictions),2 reserves of mineral and fossil fuel resources have not been exhausted. Price signals reflecting relative (economic) scarcity have stimulated exploration and discovery, technological progress, and supply substitution. Hence, the world of nonrenewable natural resources is characterized more by smooth transitions (Robert M. Solow 1991; William D. Nordhaus 1992) than by overshoot and collapse. Reserves have increased, demand has changed, substitution has occurred, and — in some cases — recycling has been stimulated. As a result, for much of the past century, the economic scarcity of natural resources had not been increasing, but decreasing (Harold  
+
+J.	Barnett and Chandler Morse 1963). Late in the twentieth century, increasing scarcity may have set in for a subset of nonrenewable resources, although the time-trends are far from clear (Junsoo Lee, John A. List, and Mark C. Strazicich 2006; John Livernois 2009).  
+K.	
+  
+
+The picture is quite different if we turn from nonrenewable natural resources — minerals and fossil fuels — to renewable natural resources (including many forests and most fisheries), which have exhibited monotonically increasing scarcity. The irony is obvious: many nonrenewable natural  
+
+  
+
+ 
+resources, which are in finite supply, have not become more scarce over time, and none has been exhausted; but renewable natural resources, which have the capacity to regenerate themselves, have in many cases become more scarce, and in some cases have indeed been exhausted, that is, become extinct.  
+
+  
+
+This irony can be explained by the fact that while most nonrenewable natural resources are characterized by well-defined, enforceable property rights, many renewable resources are held as common property or open-access (Table 1). Whereas scarcity is therefore well reflected by markets for nonrenewable natural resources (in the form of “scarcity rent,” the difference between price and marginal extraction cost, originally characterized by Harold Hotelling in 1931 as “net price”),3 such rents are dissipated for open-access resources, a reality well illustrated by the bioeconomics of open- access fisheries.  
+
+  
+
+A.	Biology  
+B.	
+  
+
+Since the middle of the nineteenth century, open-access fishery stocks of numerous species have been depleted beyond sustainable levels, sometimes close to the edge of extinction. The basic biology and economics of fisheries — descendent from the Gordon-Schaefer model (H. Scott Gordon 1954; Anthony Scott 1955; M. B. Schaefer 1957; Colin W. Clark 1990) — makes clear why this has happened.  
+
+  
+
+In the upper panel of Figure 1, a logistical growth function plots the time rate of change of the fishery stock (dS/dt) on the vertical axis against the stock’s mass (S) on the horizontal axis:  
+
+  
+
+ 
+F (S )  	⎡
+
+ 
+	St ⎤
+	
+
+
+ 
+
+ 
+(1)  
+
+ 
+t	St ⎢1	K ⎥
+
+⎣	⎦
+
+
+
+where δ is the intrinsic growth rate of the stock, and K is the carrying capacity of the environment. As the size of the stock increases, its rate of growth increases until scarce food supplies and other consequences of crowding lead to decreasing growth rates. The maximum growth rate is achieved at SMSY, where the “maximum sustainable yield” (MSY) occurs. A stable equilibrium is found where the rate of growth transitions from positive to negative, a level of the stock described by biologists as the “carrying capacity” or “natural equilibrium” of the fishery. Another stable equilibrium is found at the origin — exhaustion (extinction).  
+
+  
+
+The likelihood of extinction is particularly acute when the natural growth function of a species exhibits “critical depensation,” illustrated in the lower panel of Figure 1:  
+
+ 
+F (S )  
+
+ 
+⎡  St ⎤  ⎡ St  ⎤
+
+
+
+  
+
+ 
+
+
+(2)  
+
+ 
+t	St ⎢1  
+
+ 
+K ⎥ ⎢ K	1⎥
+
+ 
+⎣	⎦ ⎣	0      ⎦
+
+
+
+where K0 is the minimum viable population level. Below this critical level of the stock, the natural rate of growth is negative. Hence there are three equilibria: extinction (the origin); the carrying capacity; and the minimum viable population. This reflects the reality that the large habitat ranges that exist for some species, such as whales and some species of birds, mean that relatively small numbers are insufficient for mating pairs to yield birth rates that exceed the natural rate of loss to predators and disease.  
+
+  
+
+This third equilibrium is unstable. Once the population falls below this critical level, it will proceed inevitably to extinction (unless “artificial” actions are taken, such as confined breeding of the California condor, man-made habitats for the whooping crane, or “zoos in the wild” for giant pandas in China). In the nineteenth century, hunters did not shoot down each and every passenger pigeon, but nevertheless, the species was driven to extinction. A similar pattern has doomed other species. A contemporary case in point could be the blue whale (Michael A. Spence 1974), the largest animal known to have existed. Harvesting has been prohibited under international agreements since 1965, but it is unclear whether stocks have rebounded, although numbers have been increasing in one region. Across species, there is a mixed picture. Stocks of some whale species are believed to be above and others below their respective minimum viable population (International Whaling Commission 2010).  
+
+  
+
+C.	Bioeconomics  
+D.	
+  
+
+A much greater threat to renewable natural resources than this extreme biological growth function is the way many of these resources are managed: as common property or open-access. To see this, we add some basic economics to the biology of the fishery (Figure 2). First, a change in the stock of a fishery can be due not only to its biological fundamentals, but to harvests, that is, fishing:  
+
+  
+
+ 
+dS    S&  
+
+   
+
+ 
+ F (S )  q  
+
+ 
+  
+
+(3)  
+
+ 
+dt	t	t	t  
+
+  
+
+where qt is the harvest rate at time t.4  
+
+The harvest is a function of the stock and the level of effort, Et, by firms (fishing boats and crews). Abstracting from dynamics, we can identify the static efficient sustainable yield (that is, we ignore discounting over time, which is all that distinguishes this from the dynamically efficient sustainable yield), without loss of key insights. To keep things simple for the graphics, three assumptions are employed: (a) there is perfectly elastic demand, that is, the price of fish is constant,  
+
+  
+
+ 
+not a function of the quantity sold; (b) the marginal cost of a unit of fishing effort is constant; and  
+
+(c) the quantity of fish caught per unit of effort is proportional to the size of the stock. With these assumptions, the relationship between effort and harvest is:  
+
+  
+
+ 
+qt (St , Et )  t  St  Et  
+
+ 
+  
+
+(4)  
+
+ 
+  
+
+where αt is a proportional “catchability coefficient.” And profits, πt, are given by:  
+
+  
+
+ 
+t 
+
+ 
+pt qt (St , Et )  ct  Et  
+
+ 
+(5)  
+
+ 
+  
+
+where pt is the market price of fish and c is the marginal cost of fishing effort. In the steady-state, harvest is equal to growth:  
+
+  
+
+ 
+F (St )  qt  
+
+ 
+(6)  
+
+ 
+  
+
+and so from equations (1) and (2):  
+
+  
+
+	⎡	St ⎤
+
+
+
+ 
+St ⎢1 K ⎥  t  St  Et  
+
+ 
+(7)  
+
+ 
+  
+
+Solving for S and substituting into equation (4) yields steady-state harvest as a function of effort:  
+
+  
+
+ 
+q	   E 
+
+ 
+⎡   t Et ⎤
+
+
+
+ 
+
+ 
+
+
+(8)  
+
+ 
+  
+
+SS	t	t  
+
+ 
+K ⎢1		⎥
+
+ 
+⎣	⎦
+
+
+
+With this, total revenue at the steady state (or sustainable) level, equivalent to pq, is indicated in Figure 2 as the total benefits of fishing as a function of effort level. When effort exceeds level EMSY , total fish catch and revenues decline. Total cost is equivalent to the constant marginal cost of effort, c, multiplied by the effort level. Hence, the efficient level of effort, Ee, is where net benefits — the difference between total revenue and total cost — are maximized, namely where marginal benefits equal marginal costs. Clearly the maximum sustainable yield is not the efficient harvest level (but would be if fishing were costless).  
+
+  
+
+E.	The Consequences of Open Access  
+F.	
+  
+
+What happens in actual markets with open access, which historically has characterized much of commercial fishing around the world (as well as markets for a number of other renewable natural resources)? At the efficient level of effort, Ee, each boat would make profits equal to its share of scarcity rent, B(Ee) minus C(Ee), but with open access these profits become a stimulus for more capital and labor to enter the fishery. Each fisherman considers his marginal revenue and marginal extraction cost, but — without firm property rights — scarcity rent is ignored, and each has an  
+
+ 
+incentive to expend further effort (including more entry) until profits in the fishery are driven to zero: effort level Ec in Figure 2, where marginal cost is equal to average revenue rather than equal to marginal revenue. Thus, with open access, it is rational for each fisherman to ignore the asset value of the fishery, because he cannot appropriate it; all scarcity rent is dissipated (Scott 1955).  
+
+  
+
+Because no one holds title to fish stocks in the open ocean, for example, everyone races to catch as much as possible. Each fishermen receives the full benefit of aggressive fishing — a larger catch — but none pays the full cost, an imperiled fishery for everyone. One fisherman’s choices have an effect on other fishermen (of this generation and the next), but in an open-access fishery — unlike a privately-held copper mine — these impacts are not taken into account.  
+
+  
+
+These consequences of open access — predicted by theory — have been validated repeatedly with empirical data. A study of the Pacific halibut fishery in the Bering Sea estimated that the efficient number of ships was nine, while the actual number was 140 (Daniel D. Huppert 1990).5 An examination of the New England lobster fishery found that in 1966 the efficient number of traps set would have been about 450,000, while the actual number was nearly one million. Likewise, an analysis of the North Atlantic stock of minke whale found that the efficient stock size was about 67,000 adult males, whereas the open-access stock had been depleted to 25,000 (Erik S. Amundsen, Trond Bjørndal, and Jon M. Conrad 1995). In terms of social costs, an analysis of two lobster fisheries in eastern Canada found that losses due to unrestricted entry amounted to about 25 percent of market value of harvests, due mainly to excess deployment of resources for harvest, with fishery effort exceeding the efficient level by some 350 percent (J. V. Henderson and M. Tugwell 1979).  
+
+  
+
+Under conditions of open access, two externalities may be said to be present. One is a contemporaneous externality (as with any public good) in which there is over-commitment of resources: too many boats, too many fishermen, and too much effort as everyone rushes to harvest before others. The other is an intertemporal externality in which over-fishing reduces the stock and hence lowers future profits from fishing.  
+
+  
+
+A classic time-path of open-access fisheries has been repeated around the world. First, a newly-discovered resource is open to all comers; eventually, large harvests and profits attract more entry to the fishery; boats work harder to maintain their harvest; despite increased efforts, the harvests decline; and this leads to greater increases in effort, resulting in even greater declines in harvest, resulting in essential collapse of the fishery. This pattern has been documented for numerous species, including the North Pacific fur seal (Wilen 1976) and the Northern anchovy fishery (Jean-Didier Opsomer and Conrad 1994), as well Atlantic cod harvested by U.S. and Canadian fishing fleets in the second half of the twentieth century (Figure 3).  
+
+  
+
+Although open access drives the stock below its efficient level, it normally does not lead to the stock being exhausted (except possibly under critical depensation, as explained above), because below a certain stock level, the benefits of additional harvest are simply less than the additional costs. This is at the heart of a fundamental error in what is probably the most frequently cited article  
+
+  
+
+ 
+on common-property and open-access resources, Garrett Hardin’s “The Tragedy of the Commons” (1968):  
+
+  
+
+Picture a pasture open to all... A rational herdsman concludes that the only sensible course for him to pursue is to add another animal to his herd. And another; and another... Each man is locked into a system that compels him to increase his herd without limit — in a world that is limited. Ruin is the destination toward which all men rush, each pursuing his own best interest in a society that believes in the freedom of the commons. Freedom in the commons brings ruin to all (Hardin 1968, p. 1244).  
+
+  
+
+As Partha Dasgupta (1982) subsequently wrote: “It would be difficult to locate another passage of comparable length and fame containing as many errors as the one above.” Ruin is not the outcome of the commons, but rather excessive employment of capital and labor, small profits for participants, and an excessively depleted resource stock.6 Those are bad enough.  
+
+  
+
+G.	Alternative Policies for the Commons Problem  
+H.	
+  
+
+The most obvious solution to a commons problem — in principle — may be to enclose it, that is, put in place fee-simple or other well-defined property rights to limit access.7 In the case of a natural fishery, this is typically not feasible, but it is if species are immobile (oysters, clams, mussels), can be confined by barriers (shrimp, carp, catfish), or instinctively return to their place of birth to spawn (salmon, ocean trout). Such fish farming (aquaculture) is feasible and profitable with a limited but important set of commercial species (Table 1). Presently, approximately one-third of global fisheries production is supplied by commercial aquaculture, much of it in Asia (U.N. Food and Agriculture Organization 2007).  
+
+  
+
+Because aquaculture remains confined to a limited set of commercial species (and environmental concerns may preclude expansion), there has been a history of government attempts to regulate open-access fisheries through other means. The most frequent regulatory approach has been to limit annual catches (with the target typically being the maximum sustainable yield, not the efficient level of effort) through restrictions on allowed technologies, closure of particular areas, or imposition of limited seasons. These regulatory approaches have the effect of raising the marginal cost of fishing effort, in effect pivoting up the total cost function in Figure 2 until it intersects the benefit function at point X, thereby achieving the fishing effort associated with maximum sustainable yield, EMSY , or potentially to point Y, thereby achieving the efficient effort level, Ee.  
+
+Marginal costs increase because each new constraint causes fishermen to re-optimize. In response to constraints on technology, areas, or season, fishermen employ excessively expensive methods (over-capitalization) to catch a given quantity of fish. Technology constraints can lead to  
+
+  
+
+ 
+the employment of more labor; area closures can lead to the adoption of more sophisticated technologies, and reduced seasons result in the use of more boats.8 Although the harvest may be curtailed as desired, the net benefits to the fishery are essentially zero. Costs go up for fishermen (as resources are squandered). Social efficiency is not achieved, nor is it approached.  
+
+  
+
+A dramatic example is provided by New York City’s once thriving oyster fishery. In 1860, 12 million oysters were sold in New York City markets. By 1880, production was up to 700 million oysters per year. “New Yorkers rich and poor were slurping the creatures in oyster cellars, saloons, stands, houses, cafes, and restaurants...” (Elizabeth Royte 2006). It became clear that the oyster beds were being depleted. First the city restricted who could harvest oysters, then when they were permitted to do so. Eventually, the city limited the use of dredges and steam power. Nevertheless, in 1927, the last of the city’s oyster beds closed (a casualty not only of open access to the oyster habitats, but also of the use of the city’s harbors as another sort of commons, namely as a depository for the city’s sewage).  
+
+  
+
+The economic implications of conventionally regulated open-access fisheries are worse than those that occur under unregulated open-access conditions (Homans and Wilen 1997; Martin D. Smith and Wilen 2003). Over-capitalization is greater, as is the consequent welfare loss. Such situations with conventional open-access fisheries regulation are commonplace: over-fishing occurs, the fishery stock is depleted, the government responds by regulating the catch, thereby driving up the cost of fishing, fishermen complain that they cannot make a profit, and harvests continue to fall. Is there a better way?  
+
+  
+
+From an economic perspective, the most obvious way of assuring that harvest levels are maintained at an efficient level while providing incentives for cost reductions is a tax on fish harvests. Such an efficient tax, which increases marginal costs, rotates the TC line in Figure 2 until it intersects total benefits at point Y, and thereby brings about Ee, similar to conventional regulation. The tax which would accomplish this would be equal to the difference between B(Ee) and C(Ee). Despite the apparent graphical similarity with the conventional regulatory outcome, this approach is efficient, because rather than destroying the rents through higher resource costs, the tax transfers the rents from the private to the public sector. Hence, the social net benefits of the tax approach are identical to those under the efficient outcome.  
+
+  
+
+There is a problem, however. For the fishermen, these transfers are very real costs. The rent that would be received by a sole owner is received by the government instead. Any fishermen who might want the fishery to be managed efficiently will surely object to this particular approach. So, is there some way that the catch can be restricted to the efficient level, with real resource costs minimized, but without transferring the rents from fishermen to the government?  
+
+  
+
+One answer is a system individual transferable quotas (ITQs), by which the government sets the overall, annual allowable catch (equal to the efficient catch for the fishery), allocates this catch to fishermen in the form of quotas which entitle holders to catch a specified quantity of fish per year,  
+
+ 
+and allows the fishermen to transfer (buy and sell) the quotas.9 As we examine in more detail below in the context of tradable “pollution allowances,” the quotas in the fishery will flow to those that gain the most net benefit from them due to lower costs. Hence, cost-reducing technologies and management are encouraged (as with a tax), but rents are retained by the fishing industry.10  
+
+  
+
+Such ITQ systems have been used successfully in some 150 major fisheries of 170 species in seventeen countries — some with very significant fishing industries, such as Australia, Canada, Iceland, and New Zealand (Richard G. Newell, Sanchirico, and Suzi Kerr 2005). In fact, New Zealand regulates virtually its entire commercial fishery this way. Since 1986, the system has been effective, largely eliminating over-fishing, restoring stocks to sustainable levels, and increasing fishermen’s profits. Several ITQ systems are in operation in the United States, including ones for Alaska’s pacific halibut and Virginia’s striped-bass fisheries.  
+
+  
+
+In addition to reducing catches in an efficient manner, these systems have been found to improve safety by reducing incentives for fishermen to go out (or stay out) when weather conditions are dangerous. Further, because ITQ systems eliminate the motivation for government to limit the duration of the fishing season, supplies available to consumers improve in quality. Since fishermen own shares of the assets under an ITQ system, the total allowable catch is self-enforcing, in the sense that all participants have incentives to report anyone not complying with the rules.  
+
+  
+
+The example of the Pacific halibut fishery is illuminating (Huppert 1990, 2005). Open access had led to a gradually diminishing stock throughout the 1970s. In an effort to reduce the harvest, the season was first reduced from 125 days in 1975 to 25 days in 1980, and then to just 2 days in 1994. The result, of course, was more effort expended in a shorter time. Overcapitalization of the fishery was rampant. By 1994, crews remained out for the entire 48 hours of the season, leading to high rates of injury — and even mortality. Due to the rushed fishing, the by-catch (of other species) was exceedingly high, as was so-called “ghost fishing” from abandoned nets. Fresh halibut became a rarity, because nearly all of the catch had to be frozen; and much of it decayed on docks due to insufficient processing capacity. Furthermore, the regulatory approach failed even to limit the catch, with the targeted total allowable catch exceeded in two out of three years (Homans and Wilen 1997).  
+
+  
+
+An ITQ system was established in 1995. The season length increased from two days to more than 200 days (U.S. National Research Council 1999). Safety problems were diminished, by-catch was reduced by 80 percent, ghost fishing losses fell by 77 percent, and the quality of fish in the market increased. From 1994 to 1999, the number of fishing vessels decreased by 10 percent, while the value of the harvest increased by 34 percent. Total allowable catch has not been exceeded since the inception of the program.  
+
+ 
+In 2006, a group of scientists projected that at existing rates of ocean fisheries depletion, all commercial fisheries would collapse by the middle of the century (Boris Worm, et al. 2006). Two years later, Christopher Costello, Steven D. Gaines, and John Lynham (2008) compiled a global database of fisheries management and catch statistics for more than 11 thousand fisheries from 1950 to 2003. They found that, where implemented, ITQ systems had halted and reversed trends toward collapse.11  
+
+  
+
+All of the approaches described above can be used in the context of inland bodies of water and within countries’ political jurisdictions — 200 miles from coastlines, where the richest and most important ocean fisheries are located. But in the open ocean, beyond the 200-mile limit, international negotiation and regulation is required (as with whaling), and the challenges become much greater (Bromley 1992), a generic problem which is taken up below.  
+
+  
+
+## III.	Environmental Quality as a Problem of the Commons  
+IV.	
+  
+
+In the late twentieth century, social concern about the commons expanded well beyond renewable, open-access resources to include environmental degradation, that is, the use of common airsheds, watersheds, and land masses as repositories of pollution and waste. For much of the past 90 years, economists have thought of environmental pollution as a classic — indeed, textbook — example of a negative externality, that is, an unintentional consequence of production or consumption which reduces another agent’s profits or utility (Arthur C. Pigou 1920). However, a separate but related strand of literature — stemming from Ronald Coase’s work (1960) — has identified environmental pollution essentially as a public good, that is, a problem of incomplete property rights.  
+
+  
+
+Both perspectives identify the problem as one of the commons, but they lead to different policy prescriptions. Both prescriptions can facilitate cost-effective environmental protection, and the respective economic literatures together constitute what is arguably the most important contribution of environmental economics to public policy — the notion and means of getting the prices right, that is, the development of market-based approaches to environmental protection.  
+
+  
+
+A.	Cost Effectiveness  
+B.	
+  
+
+Whereas much of normative economics has focused on questions of efficiency (maximizing net benefits), discussions in the environmental realm have tended to employ a more modest criterion  
+
+—	cost-effectiveness (minimizing costs of achieving some given objective) — largely because of the difficulty of measuring the benefits of environmental protection.12 To be more precise, by cost- effectiveness I mean that allocation of control efforts among pollution sources that results in an  
+—	
+ 
+aggregate abatement target being achieved at the lowest possible cost, that is, the allocation which satisfies the following cost-minimization problem:  
+
+  
+
+ 
+min C   ci (ri )  
+
+ 
+(9)  
+
+ 
+{ri }     
+
+ 
+i 1  
+
+ 
+  
+
+ 
+s.t.   
+
+ 
+  
+
+   
+
+[ui  ri ]    E  
+
+i 1  
+
+ 
+(10)  
+
+ 
+  
+
+ 
+and  
+
+ 
+0  ri  
+
+ 
+ ui  
+
+ 
+(11)  
+
+ 
+  
+
+where ri is reductions in emissions (abatement or control) by source i (i = 1 to N); ci(ri) is the cost function for source i; C is aggregate cost of control; ui is uncontrolled emissions by source i; and E is the aggregate emissions target imposed by a regulatory authority.  
+
+  
+
+If the cost functions are convex, then necessary and sufficient conditions for satisfaction of the constrained optimization problem posed by equations (9) through (11) are:  
+
+  
+
+ 
+ci (ri )    0  
+
+ri  
+
+ 
+  
+
+(12)  
+
+ 
+  
+
+⎡c (r )	⎤
+
+r  ⎢     i   i    ⎥  0	(13)  
+
+⎢⎢   ri	⎥
+
+
+
+where λ is a Lagrange multiplier which reflects the shadow price of emissions. Equations (12) and  
+
+(13) together imply the crucial condition for cost-effectiveness: that all sources that exercise some degree of control experience the same marginal abatement cost (Baumol and Oates 1988). Thus, when considering alternative environmental policy instruments, a key question is whether instruments are likely to result in marginal abatement costs being equated across sources.13  
+
+  
+
+Conventional approaches to regulating the environment — frequently characterized as command-and-control — allow relatively little flexibility in the means of achieving goals. Such policy instruments tend to force firms to take on similar shares of the pollution-control burden, regardless of the cost, sometimes by setting uniform standards for firms, the most prevalent of which are technology- and performance-based standards.  
+
+  
+
+Where there is significant heterogeneity of costs — which is a common feature of pollution abatement — command-and-control methods will not be cost-effective. In reality, costs can vary 
+enormously due to production design, physical configuration, age of assets, and other factors. Holding all firms to the same target will be unduly expensive.  
+
+  
+
+In principle, governments could employ non-uniform performance standards to bring about the cost-effective allocation of control responsibility, but to develop such a set of source-specific standards, the government would need to know the marginal abatement cost functions of all sources within its jurisdiction, information which is generally not available to governments. Is there a means by which the government can achieve the cost-effective allocation of control responsibility among pollution sources, but without needing to have information about source-level control costs?  
+
+  
+
+C.	Pigou and Environmental Taxation  
+D.	
+  
+
+For some 40 years prior to Coase (1960), the sole economic response to the problem of externalities was that the externality in question should be taxed. In principle, a regulator could ensure that emitters would internalize the damages they caused by charging a tax on each unit of pollution equal to the marginal social damages at the efficient level of pollution (Pigou 1920). Such a system makes it worthwhile for firms to reduce emissions to the point where their marginal abatement costs are equal to the common tax rate. Hence, marginal abatement costs will be equated across sources, satisfying the condition for cost-effectiveness (equations 12 and 13). Whenever abatement costs differ across emitters, conventional policies would not be cost-effective, but a uniform Pigouvian tax would be. This is true both in the short term, and in long term by providing incentives for the innovation (Newell, Adam B. Jaffe, and Stavins 1999) and diffusion (Jaffe and Stavins 1995) of low-cost abatement technologies.  
+
+  
+
+The conventional wisdom is that pollution taxes have been rarely, if ever, employed. This is not strictly correct if one defines environmental tax systems broadly (Stavins 2003). In this spirit, these systems can be divided into those for which behavioral impacts are central to their design and performance; and those for which anticipated behavioral impacts are secondary, at best. Within the first set, effluent charges have been employed — typically for water pollution and at low levels with minimal behavioral effects — in a number of European and other nations. Beyond that, deposit- refund systems — in which front-end charges are combined with refunds payable when particular behavior is carried out — have been used in 10 U.S. states for beverage containers and 11 states for motor vehicle batteries, as well as in dozens of other countries for these and other products. In addition, various forms of tax differentiation — tax cuts, credits, and subsidies — intended to encourage environmentally desirable behavior are common in Europe, the United States, and many other countries (Stavins 2003).  
+
+  
+
+Why have true Pigouvian taxes been used infrequently, despite their theoretical advantages (Allen V. Kneese and Charles L. Schultz 1975; Don Fullerton 1996)? First, it is difficult to identify the appropriate tax rate. For social efficiency, it should be set equal to the marginal benefits of cleanup at the efficient level of cleanup, but policy makers are more likely to think in terms of a desired level of cleanup, and they do not know beforehand how firms will respond to a given level of taxation. A more important political problem posed by pollution taxes is associated with their distributional consequences for regulated sources. Despite the fact that such systems minimize aggregate social costs, these systems are likely to be more costly than comparable command-and- control instruments for regulated firms, because firms both incur their abatement costs and pay taxes  
+
+ 
+on their residual emissions (James M. Buchanan and Gordon Tullock 1975). In practice, some of these costs will be passed on to consumers, but many firms may still be worse off under a tax.  
+
+  
+
+Is there a way the government can achieve its pollution-control targets cost-effectively, but eliminate the abatement uncertainty inherent in the Pigouvian tax approach, and — more important, politically — eliminate the distributional impacts on regulated firms?  
+
+  
+
+E.	Coase and Tradable Rights  
+F.	
+  
+
+Following Coase (1960), it became possible to think about solving the problem of pollution as one of clarifying poorly defined property rights. If resources such as clean air and water could be recognized as a form of property, whose corresponding rights could be traded in a market, private actors could allocate the use of this property in a cost-effective way. Some forty years ago, Thomas  
+
+G.	Crocker (1966) and J. H. Dales (1968) each proposed a system of transferable discharge permits that could provide such a market solution: the regulator need only designate the total quantity of emissions allowed (the cap), distribute rights corresponding to this total, and allow individual sources of emissions to trade the permits until an optimal allocation had been reached. This was the fundamental thinking behind what was has come to be known as “cap-and-trade.”14  
+H.	
+  
+
+Under this approach, an allowable overall level of pollution is established by the government (not necessarily at the efficient level), and allocated among firms in the form of allowances. Firms that keep their emissions below their allotted level may sell their surplus allowances to other firms or use them to offset excess emissions in other parts of their operations. Under these conditions, it is in the interest of each source to carry out abatement up to the point where its marginal control costs are equal to the market-determined price of tradable allowances. Hence, the environmental constraint is satisfied, and marginal abatement costs are equated across sources, satisfying the condition for cost-effectiveness.15  
+
+  
+
+The unique cost-effective equilibrium is achieved independent of the initial allocation of allowances (David W. Montgomery 1972).16 This independence property is of central political importance and is the primary reason why cap-and-trade systems have been employed in representative democracies, where distributional issues are of paramount importance in mustering support for a policy. In principle, the government can set the overall emissions cap — whether on the basis of economic efficiency or, more likely, some other grounds — and then leave it up to the legislature to allocate the available number of allowances among sources to build a constituency of support for the initiative without reducing the system’s environmental performance or driving up 
+its cost.17 This should be contrasted with most public policy proposals – environmental or otherwise  
+
+– for which the normal course of events is that the political machinations that are necessary to develop sufficient legislative support reduce the effectiveness of the policy and/or drive up its costs.  
+
+  
+
+Cap-and-trade has been used in the United States and Europe, as well as other countries (Stavins 2003). In the 1980s, leaded gasoline was phased out of the U.S. market with a program similar to cap-and-trade among refineries, saving about $250 million per year compared with a program without trading (U.S. Environmental Protection Agency 1985), and providing measurable incentives for cost-saving technological change (Kerr and Newell 2003). Since 1995, under the Clean Air Act amendments of 1990, a sulfur dioxide (SO2) allowance trading program has reduced emissions by half, saving $1 billion per year compared with a conventional approach (Stavins 1998).18 Most recently, Australia, Canada, Europe, Japan, New Zealand, and the United States have turned their attention to employing cap-and-trade to address the ultimate problem of the commons.  
+
+  
+
+D. The Ultimate Commons Problem: Global Climate Change  
+
+  
+
+Anthropogenic emissions of greenhouse gases19 — including carbon dioxide (CO2) from the combustion of fossil fuels and from land-use changes (Stavins 1999) — are very likely to change the earth’s climate in ways that will have serious environmental, economic, and social consequences (Martin Parry et al. 2007). The atmospheric concentration of CO2 increased from the pre-industrial value of about 280 parts per million (ppm) to 379 ppm by 2005 (Rajendra K. Pachauri and Andy Reisinger 2007). These increased concentrations of CO2 and other greenhouse gases (GHGs) have been accompanied by increases in global mean temperatures measured over land and oceans (Figure 4).  
+
+  
+
+Although the 2008-2009 global recession slowed emissions growth significantly, the world is on a path to more than double current global atmospheric GHG concentrations (in CO2-equivalent terms) well before the end of the century, resulting in an average global temperature increase of 1.8 to 4.0° C (3.2 to 7.2° F), relative to 1980-1990 levels, depending upon the quantity of future emissions (Pachauri and Reisinger 2007). But increased temperatures — which might be welcome in some places — are only part of the story.  
+
+  
+
+The most important anticipated consequences of climate change are changes in precipitation, decreased snowpack, glacier melting, droughts in mid to low latitudes, decreased cereal crop productivity at lower latitudes, increased sea level, loss of islands and coastal wetlands, increased 
+flooding, greater storm intensity, species extinction, and spread of infectious disease. Climate change will also bring longer growing seasons to higher latitudes and some health benefits to temperate areas, such as fewer deaths from cold exposure. However, it is anticipated that such benefits will be greatly outweighed by negative impacts (Parry et al. 2007).  
+
+  
+
+These biophysical impacts will have significant economic, social, and political consequences. Estimates of economic impacts of unrestrained climate change vary, with most falling in the range of 1 to 3% of world GDP per year by the middle of the current century (with large regional differences), assuming 4 oC warming (Parry et al. 2007; Nordhaus 2010a). The best estimates of marginal damages of emissions (by mid-century) are in the range of $75 to $175 per ton of CO2, in today’s dollars (Nordhaus 2008; U.S. Environmental Protection Agency 2008). In order to have a  
+
+0.50 probability of keeping temperature increases below 2 oC (a long-term goal acknowledged by most national governments), it would be necessary to stabilize atmospheric concentrations at 450 ppm, which in principle could be achieved by cutting global emissions 60 to 80% below 2005 levels by 2050 (Metz et al. 2007), a task which currently appears to be politically impossible, despite its apparent economic and technological feasibility. Of course, economic feasibility does not necessarily imply economic desirability, normally thought of as requiring a comparison of anticipated benefits and costs.20  
+
+  
+
+Climate change is a commons problem of unparalleled magnitude along two key dimensions: temporal and spatial (Christopher Robert and Richard Zeckhauser 2010). In the temporal domain, it is a stock, not a flow problem, with greenhouse gases remaining in the atmosphere for decades to centuries. In the spatial domain, greenhouse gases uniformly mix in the atmosphere, and so the nature, magnitude, and location of damages are independent of the location of emissions. Hence, for any individual political jurisdiction, the direct benefits of taking action will inevitably be less than the costs, producing a free-rider problem, and thereby suggesting the importance of international — if not global — cooperation (Nordhaus 2010b).  
+
+  
+
+Despite the apparent necessity of international cooperation for the achievement of meaningful GHG targets, the key political unit of implementation —and decision-making — for any international climate policy will be the sovereign state, that is, the nations of the world. Therefore, before turning to the topic of international cooperation, it is important to ask what economics has to say about the best instruments for national action. In both cases, I limit my attention to the means 
+—	the instruments — of climate policy, although economists have and will continue to make important contributions to analyses of the ends — the goals — of climate policy.  
+—	
+  
+
+There is widespread agreement among economists (and a diverse set of other policy analysts) that economy-wide carbon pricing will be an essential ingredient of any policy that can achieve meaningful reductions of CO2 emissions cost-effectively, at least in the United States and other industrialized countries (Gilbert E. Metcalf 2009; Louis Kaplow 2010).21 The ubiquitous nature of energy generation and use and the diversity of CO2 sources in a modern economy mean that conventional technology and performance standards would be infeasible and — in any event — excessively costly (Newell and Stavins 2003). There is somewhat less agreement among economists regarding the choice of specific carbon-pricing policy instruments, with some tending to support carbon taxes (N. Gregory Mankiw 2006; Nordhaus 2007; Metcalf 2007) and others cap-and-trade mechanisms (A. Denny Ellerman, Joskow, and David Harrison 2003; Stavins 2007; Keohane 2009).  
+
+  
+
+In truth, the two approaches are more similar than different. A carbon tax would directly place a price on carbon (most likely upstream, where fossil fuels — coal, petroleum, and natural gas  
+
+—	enter the economy), with quantities of carbon use and CO2 emissions adjusting in response. An upstream carbon cap-and-trade system would constrain the quantity of carbon entering the economy, with prices emerging indirectly from the market for allowances. Either instrument can be designed  
+—	
+—	in principle — to be equivalent to the other in distributional terms. If allowances are auctioned, a cap-and-trade system looks much like a carbon tax from the perspective of regulated firms. Likewise, if tax revenues are refunded in particular ways, a carbon tax can resemble cap-and-trade with free allowances.  
+—	
+  
+
+What may appear to be key differences between the two instruments fade on closer inspection. First, a carbon tax would raise revenues that can be used for beneficial public purposes, such as for cutting distortionary taxes, thereby lowering the social cost of the overall policy (A. Lans Bovenberg and Lawrence H. Goulder 1996). Given the need for government revenues, this is an important attribute of taxes. But, an auction mechanism under cap-and-trade can do precisely the same.  
+
+  
+
+Second, an important question is the relative effect of the two approaches on technological innovation. A series of theoretical explorations have found that a tax and a cap-and-trade system with auctioned allowances are equivalent in their incentives for carbon-saving innovation (Scott R. Milliman and Raymond Prince1989; Chulho Jung, Kerry Krutilla, and Roy Boyd 1996), or at least that neither system dominates (Carolyn Fischer, Ian W. H. Parry, and William A. Pizer 2003).22 
+Third, there is the simplicity of a carbon tax, in which firms would not need to manage and trade allowances, and the government would not need to track allowance transactions and ownership. However, experience with cap-and-trade systems indicates that the actual costs of trading institutions have not been significant. And whether a policy as important as a national carbon tax would turn out to be “simple” in its design and implementation is at least open to question.  
+
+  
+
+Fourth, there is resistance to new taxes. In their simplest respective forms (a carbon tax without revenue recycling, and a cap-and-trade system without auctions), a carbon tax is more costly than a cap-and-trade system to the regulated sector, because with the former firms incur both abatement costs and the cost of tax payments to the government. This might argue politically against the tax approach, but now that cap-and-trade has been demonized — in U.S. politics, at least  
+
+—	as “cap-and-tax,” this difference has surely diminished.  
+—	
+  
+
+That said, there are some real differences between these two approaches. First, there is the reality of abatement cost uncertainty under a cap-and-trade system versus emissions uncertainty under a tax regime. From an economic perspective, it makes sense to allow emissions (of a stock pollutant) to vary from year to year with economic conditions that affect aggregate abatement costs.23 This happens automatically with a carbon tax. With a cap-and-trade system, such temporal flexibility needs to be built in through provisions for banking and borrowing of allowances. Furthermore, a tax approach eliminates the potential for short-term price volatility, which can exist under a cap-and-trade system.  
+
+  
+
+Second, there are fears of market manipulation, a relevant argument against the use of cap- and-trade systems in a developing-country context. In industrialized countries, however, appropriate regulatory oversight can address such concerns. Third, there has been considerable experience with the use of cap-and-trade systems, as noted above, but although there is little or no real experience with Pigouvian taxes for pollution control, there is surely abundant experience with a wide variety of taxes to accomplish a diverse set of social objectives.  
+
+  
+
+Fourth, cap-and-trade systems generate a natural unit of exchange for international harmonization and linkage: allowances denominated in units of carbon content of fossil fuels (or CO2 emissions). Hence, it is easier to harmonize with other countries’ carbon mitigation programs, which are more likely to employ cap-and-trade than tax approaches (Judson Jaffe, Matthew Ranson, and Stavins 2010). However, through appropriate mechanisms, international linkage can include carbon tax systems (Metcalf and David Weisbach 2010).  
+
+  
+
+Fifth and finally, there is a fundamental political-economy difference. Cap-and-trade leaves distributional issues up to politicians, and thereby provides a straightforward means to compensate burdened sectors. Of course, this political advantage is also an economic disadvantage in that it invites rent-seeking behavior. In any event, the compensation associated with free distribution of 
+allowances based on historical activities can be mimicked under a tax regime, although it would be legislatively more complex. A real difference is that the cap-and-trade approach avoids likely battles over tax exemptions among vulnerable industries and sectors that would drive up the costs of the program, as more and more sources (emission-reduction opportunities) are exempted from the program, thereby simultaneously compromising environmental performance. Instead, a cap-and-trade system leads to battles over the allowance allocation, but these do not raise the overall cost of the program nor affect its climate impacts (Montgomery 1972).  
+
+  
+
+Remaining differences between carbon taxes and cap-and-trade can diminish with implementation. Hybrid schemes that include features of taxes and cap-and-trade systems blur distinctions. The government can auction allowances in a cap-and-trade system, thereby reproducing many of the properties of a tax approach. Mechanisms that deal with uncertainty in a cap-and-trade system also bring it close to a tax approach, including a cost containment mechanism that places a cap or collar on allowance prices, banking that creates a floor under prices, and borrowing that provides flexibility similar to a tax. To some degree, the dichotomous choice between taxes and cap-and-trade can be a choice of design elements along a policy continuum (Weisbach 2010).  
+
+  
+
+Because of the similarity between the two approaches to carbon pricing, it has been argued that the key questions that should be used to decide between these two policy approaches are: which is more politically feasible; and which is more likely to be well-designed (Jason Furman, Jason E. Bordoff, Manasi Deshpande, and Pascal J. Noel 2007). To some degree, responses to these questions have been provided by the political revealed preference of individual countries, with the world’s most significant climate policy employing a cap-and-trade system to constrain Europe’s CO2 emissions — the European Union Emission Trading Scheme (EU ETS).24 Although the system had its share of problems in its pilot phase, it has functioned as anticipated since then (Ellerman, Frank  
+
+J. Convery, and Christian de Perthuis 2010). This is despite the fact that the 2008-2009 recession led to significantly lower allowance prices and hence fewer emission reductions than anticipated (Richard N. Cooper 2010a).25 In addition, New Zealand has launched a GHG cap-and-trade system, and Australia and Japan have considered doing likewise for CO2. Canada has indicated that it will launch a domestic system when and if the United States does so, but domestic U.S. politics slowed developments in 2010.26  
+
+  
+
+Even as domestic climate policies move forward in some countries but not in others, it is clear that due to the global commons nature of the problem, meaningful international cooperation  
+will eventually be necessary. The Kyoto Protocol (1997) to the United Nations Framework Convention on Climate Change (1992) will expire in 2012, and is, in any event, insufficient to the long-term task, due to the exclusion of developing countries from responsibility. Although the industrialized countries accounted for the majority of annual CO2 emissions until 2004, that is no longer the case. China has surpassed the United States as the world’s largest emitter, and most growth in CO2 emissions in the coming decades will come from countries outside of the Organization of Economic Cooperation and Development (OECD), with emissions in nearly all OECD countries close to stable or falling (Figure 5).  
+
+  
+
+A wide range of potential paths forward are possible (Joseph E. Aldy, Scott Barrett, and Stavins 2003), including top-down international agreements involving targets and timetables that involve more countries as they become more wealthy (Jeffrey Frankel 2010); harmonized national policies, such as domestic carbon taxes (Cooper 2010b); and bottom-up loosely coordinated national policies, such as the linkage of regional and national cap-and-trade systems through bilateral arrangements (Jaffe, Ranson, and Stavins 2010). The most promising alternatives can — in principle — achieve reasonable environmental performance cost-effectively by including not only the currently industrialized nations, but also the key emerging economies (Aldy and Stavins 2009).  
+
+  
+
+  
+
+Political feasibility is another matter, partly due to countries’ asymmetric situations (Edward  
+
+A. Parson and Zeckhauser 1995). The United States and other industrialized countries have come to insist that the large, emerging economies — China, India, Brazil, Korea, Mexico, and South Africa — begin to take on proportionate shares of the mitigation burden, while some of those emerging economies plus most developing countries insist that the rich countries go first, and possibly compensate developing countries for climate damages (due to cumulative emissions from the industrialized world). At a minimum, developing countries want their mitigation and adaptation to be financed by the wealthier countries, but such large financial transfers are unlikely.  
+
+  
+
+Given the spatial and temporal nature of this global commons problem, political incentives around the world are to rely upon other nations to take action. Since sovereign nations cannot be compelled to act against their wishes, successful cooperation — whether in the form of international treaties or less formal mechanisms — must create internal incentives for compliance, along with external incentives for participation. Because no single approach guarantees a sure path to ultimate success, the best strategy to address this ultimate commons problem may be to pursue a variety of approaches simultaneously. The difficulties inherent in addressing the climate problem cannot be overstated. As Coman (1911) observed a century ago, appropriate regimes to govern the commons  
+
+—	though theoretically clear — may sometimes be very difficult to achieve in practice.  
+—	
+  
+
+## V.	Conclusions  
+VI.	
+  
+
+Problems of the commons are both more widespread and more important today than when Coman wrote about unsettled problems in the first issue of the Review 100 years ago. A century of economic growth and globalization have brought unparalleled improvements in societal well-being, but also unprecedented challenges to the carrying-capacity of the planet. What would have been in 1911 inconceivable increases in income and population have come about and have greatly heightened pressures on the commons, particularly open-access resources.  
+
+ 
+The stocks of a variety of renewable natural resources — including water, forests, fisheries, and numerous other species of plant and animal — have been depleted below socially efficient levels, principally because of commons problems, that is, poorly-defined property-right regimes. Likewise, the same market failures of open-access — whether characterized as externalities, following Pigou, or public goods, following Coase — have led to the degradation of air and water quality, inappropriate disposal of hazardous waste, depletion of stratospheric ozone, and the atmospheric accumulation of greenhouse gases linked with global climate change.  
+
+  
+
+Over this same century, economics — as a discipline — has gradually come to focus more and more attention on these commons problems, first with regard to natural resources, and more recently with regard to environmental quality. Economic research within academia and think tanks has improved our understanding of the causes and consequences of excessive resource depletion and inefficient environmental degradation, and thereby has helped identify sensible policy solutions. Conventional regulatory policies, which have not accounted for economic responses, have been excessively costly, ineffective, or even counter-productive. The problems behind what Hardin (1968) characterized as the “tragedy of the commons” might better be described as the “failure of commons regulation.” As our understanding of the commons has become more complex, the design of economic policy instruments has become more sophisticated.  
+
+  
+
+Commons problems have not diminished, and the lag between understanding and action can be long. While some commons problems have been addressed successfully, others continue to emerge. Some — such as the threat of global climate change — are both more important and more difficult than problems of the past. Fortunately, economics is well positioned to offer better understanding and better policies to address these ongoing challenges. As the first decade of the twenty-first century comes to a close, natural resource and environmental economics has emerged as a productive field of our discipline and one which shows even greater promise for the future.
